@@ -1,0 +1,6 @@
+*.iml
+*.class
+.project
+.classpath
+**/node_modules/**
+**/*.zip
