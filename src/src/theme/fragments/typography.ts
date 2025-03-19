@@ -1,9 +1,9 @@
 export const typography = {
   fontFamily: "Lato, Arial",
   h1: {
-    fontSize: "1.75rem",
+    fontSize: "1.85rem",
     fontWeight: "normal",
-    lineHeight: "2.625rem",
+    lineHeight: "1.3",
     padding: 0,
     marginBottom: "1rem"
   },

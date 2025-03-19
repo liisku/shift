@@ -8,6 +8,7 @@ import AboutMe from "../../components/AboutMe";
 import Banner from "../../components/Banner";
 import SectionHeading from "../../components/SectionHeading";
 import InfoCircle from "../../components/InfoCircle";
+import Bullet from "../../components/Bullet";
 
 const HomePage: React.FC = () => {
   const menuItems: MenuNavItem[] = [
@@ -43,27 +44,47 @@ const HomePage: React.FC = () => {
               flexDirection: "row",
               justifyContent: "center",
               alignItems: "flex-end",
-              pb: ["6rem", "6rem", "6rem", "8rem"],
+              pb: [7, 5, 0, 0],
             }}
           >
             <Box
               sx={{
-                width: ["70%", "50%", "40%"],
+                width: "fit-content",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
+                p: [3, 4, 5, 6],
               }}
             >
-              <Box sx={{ width: ["300px", "400px", "400px", "500px"] }}>
-                <img src="logo.png" alt="SHIFT" width="100%" />
+              <Box
+                sx={{
+                  width: ["100px", "112px", "128px", "128px"],
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  mb: [6, 6, 6, 6],
+                }}
+              >
+                <img
+                  src="certificate.png"
+                  alt="Uusi terveempi työaika"
+                  width="100%"
+                />
+              </Box>
+              <Box sx={{ width: ["285px", "350px", "400px", "450px"] }}>
+                <img src="logo.png" alt="SHIFT-valmennus" width="100%" />
               </Box>
               <Typography
-                variant="h2"
+                variant="h1"
                 color="white"
-                sx={{ textAlign: "center" }}
+                sx={{
+                  fontSize: ["1.5rem", "1.7rem", "1.85rem", "1.85rem"],
+                  textAlign: "center",
+                  maxWidth: "400px",
+                }}
               >
-                Uusi terveempi työaika
+                yritysvalmennukset & inspiraatiopäivät
               </Typography>
             </Box>
           </Box>
@@ -157,19 +178,27 @@ const HomePage: React.FC = () => {
               mielenkiintoisten aiheiden parissa. Aiheet, joista usein puhumme
               ovat esimerkiksi:
             </Typography>
-            <Typography variant="h3" sx={{ mt: 2 }}>
-              1. "Työssä jaksaminen ja palautuminen" - Petter Kukkonen
+
+            <Typography variant="h3" sx={{ mb: 0, mt: 4 }}>
+              1. Työssä jaksaminen ja palautuminen
             </Typography>
-            <Typography variant="body1">
+            <Typography variant="h4" color="primary.main" sx={{ mb: 0 }}>
+              Petter Kukkonen
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 1 }}>
               Millaisia haasteita vaativa, paljon matkustamista sisältävä
               reissutyö pitää sisällään ja mitkä asiat voivat viedä uupumuksen
               äärelle? Aiheita ja oivalluksia palautumisesta käsitellään
               yhdistetyn maajoukkueen toimintaympäristön näkökulmasta.
             </Typography>
-            <Typography variant="h3" sx={{ mt: 2 }}>
-              2. "Kaikki liike merkitsee" - Liis Kukkonen
+
+            <Typography variant="h3" sx={{ mb: 0, mt: 4 }}>
+              2. Kaikki liike merkitsee
             </Typography>
-            <Typography variant="body1">
+            <Typography variant="h4" color="primary.main" sx={{ mb: 0 }}>
+              Liis Kukkonen
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 1 }}>
               Ihmiset yleensä yliarvioivat toimintansa vaikutukset lyhyellä
               aikavälillä - he myös aliarvioivat tekojensa vaikutukset pitkällä
               aikavälillä. Meillä kaikilla on viikossa käytettävissämme
@@ -179,17 +208,23 @@ const HomePage: React.FC = () => {
               kustannuksella? Liisin esitys lisää ymmärrystä liikkumisen
               hyödyistä sekä mielelle että keholle.
             </Typography>
-            <Typography variant="h3" sx={{ mt: 2 }}>
-              3. "Yhdessä olemme enemmän" - tiimipäivä Liis ja Petter Kukkonen
+
+            <Typography variant="h3" sx={{ mb: 0, mt: 4 }}>
+              3. Yhdessä olemme enemmän
             </Typography>
-            <Typography variant="body1">
+            <Typography variant="h4" color="primary.main" sx={{ mb: 0 }}>
+              Tiimipäivä Liis ja Petter Kukkonen
+            </Typography>
+            <Typography variant="body1" sx={{ mt: 1 }}>
               Luomme kulttuurin, jossa suhtaudutaan uudella tavalla tiimityöhön.
               Tässä kulttuurissa ymmärretään millainen vaikutus meistä
               jokaisella on työyhteisöön.
             </Typography>
-            <Typography variant="h2" color="primary" sx={{ mt: 4 }}>
+
+            <Typography variant="h2" color="primary" sx={{ mt: 6 }}>
               Yritysvalmennukset
             </Typography>
+
             <Typography variant="body1" sx={{ mb: 2 }}>
               Toteutamme erimittaisia valmennuksia, joissa tavoite sovitaan
               yhdessä yrityksen kanssa.
@@ -256,15 +291,15 @@ const HomePage: React.FC = () => {
               <Typography variant="h6" fontWeight="bold">
                 Liis Kukkonen
               </Typography>
-              <Typography variant="body1">liis@shiftvalmennus.fi</Typography>
+              <Typography variant="body1">liiskukkonen@gmail.com</Typography>
               <Typography variant="body1">+358 44 0522506</Typography>
             </Box>
             <Box>
               <Typography variant="h6" fontWeight="bold">
                 Petter Kukkonen
               </Typography>
-              <Typography variant="body1">petter@shiftvalmennus.fi</Typography>
-              <Typography variant="body1">+358 44 0522506</Typography>
+              <Typography variant="body1">petterkukkonen@gmail.com</Typography>
+              <Typography variant="body1">+358 40 1207772</Typography>
             </Box>
           </Box>
         </Box>

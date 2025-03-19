@@ -15,7 +15,7 @@ const Quote: React.FC<QuoteProps> = (props: QuoteProps) => {
       sx={{
         m: 2,
         px: 4,
-        py: 4,
+        py: 3,
         backgroundColor: backgroundColor,
         h4: {
           mb: 0,

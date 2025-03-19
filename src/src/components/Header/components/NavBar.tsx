@@ -29,6 +29,7 @@ const NavBar: React.FC<NavBarProps> = (props: NavBarProps) => {
     <Box sx={{ display: "flex" }}>
       {menuItems.map((menuItem, index) => (
         <Typography
+          key={menuItem.id}
           variant="body2"
           sx={{ ...navLinkStyle, mr: index === menuItems.length - 1 ? 0 : 1 }}
           onClick={() => {

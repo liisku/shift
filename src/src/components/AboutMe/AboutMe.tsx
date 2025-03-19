@@ -48,7 +48,7 @@ const AboutMe = (props: AboutMeProps) => {
             mt: -2,
           }}
         >
-          <Typography variant="h3" color="primary">
+          <Typography variant="h3" color="primary" sx={{ mb: 0 }}>
             {name}
           </Typography>
 
@@ -64,7 +64,7 @@ const AboutMe = (props: AboutMeProps) => {
         </Box>
       </Box>
       {texts.map((text) => (
-        <Typography variant="body1" sx={{ mb: 1 }}>
+        <Typography key={text} variant="body1" sx={{ mb: 1 }}>
           {text}
         </Typography>
       ))}

@@ -1,6 +1,7 @@
 import { Box, SxProps, Typography } from "@mui/material";
 
 interface InfoCircleProps {
+  size?: "small" | "medium";
   texts: string[];
   backgroundColor?: string;
   color?: string;
@@ -12,14 +13,18 @@ const InfoCircle = (props: InfoCircleProps) => {
     backgroundColor = "primary.main",
     color = "white",
     texts,
+    size = "medium",
     sx,
   } = props;
+
+  const sizeValue = size === "medium" ? "10rem" : "8rem";
+  const fontSize = size === "medium" ? "h3" : "h4";
 
   return (
     <Box
       sx={{
-        width: "10rem",
-        height: "10rem",
+        width: sizeValue,
+        height: sizeValue,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -30,10 +35,12 @@ const InfoCircle = (props: InfoCircleProps) => {
         ...sx,
       }}
     >
-      <Typography variant="h3" color={color} sx={{ mb: 0 }}>
+      <Typography variant={fontSize} color={color} sx={{ mb: 0 }}>
         {texts.map((text: string) => {
           return (
-            <span style={{ display: "block", float: "none" }}>{text}</span>
+            <span key={text} style={{ display: "block", float: "none" }}>
+              {text}
+            </span>
           );
         })}
       </Typography>

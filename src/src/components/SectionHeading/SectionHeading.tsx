@@ -15,8 +15,10 @@ const SectionHeading = (props: SectionHeadingProps) => {
       id={sectionId}
       sx={{
         width: "100%",
-        backgroundColor: "grey.200",
+        backgroundImage:
+          "linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 1) 100%) ",
         mt: 8,
+        mb: 4,
         p: 4,
         ...sx,
       }}
